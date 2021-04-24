@@ -2,10 +2,9 @@ import React from "react";
 import AllProducts from "./AllProducts";
 import "./styles/Cart.css";
 import Total from "./Total.js";
-import CheckOutForm from "./CheckOutForm.js"
+import CheckOutForm from "./CheckOutForm.js";
 
 let count = 0;
-
 
 class Cart extends React.Component {
   state = { cart: [] };
@@ -22,8 +21,7 @@ class Cart extends React.Component {
   };
 
   render() {
-    let sumOf = 0
- 
+    let sumOf = 0;
 
     const { cart } = this.state;
     return (
@@ -41,19 +39,10 @@ class Cart extends React.Component {
           </ul>
           <br />
           <div>
-          <Total total={sumOf}  tax={sumOf * .05} />
-
-   
-
+            <Total total={sumOf} tax={sumOf * 0.05} />
           </div>
-          <CheckOutForm total={sumOf}  tax={sumOf * .05}/>
-   
-          </section> 
-
-  
-
-      
-
+          <CheckOutForm total={sumOf} tax={sumOf * 0.05} />
+        </section>
       </div>
     );
   }

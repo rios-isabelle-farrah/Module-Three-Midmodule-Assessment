@@ -6,9 +6,6 @@ import productData from "./../data/productData.js";
 const products = productData;
 
 const AllProducts = ({ addProduct }) => {
-  const display = () => {
-    console.log(products);
-  };
 
  // {
   //   id: "36bb1ef5-b3fe-4646-ab48-97716812831d",
@@ -37,7 +34,6 @@ const AllProducts = ({ addProduct }) => {
           </li>
         ))}
       </ul>
-      <button onClick={display}>Show console log</button>
     </div>
   );
 };

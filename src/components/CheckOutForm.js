@@ -20,15 +20,10 @@ class CheckOutForm extends React.Component {
     console.log(this.state);
     let arrayInputs = Object.values(this.state);
     console.log(this.props);
-
- 
   
       let total = this.props.total.toFixed(2);
       let tax = this.props.tax.toFixed(2);
       let finalTotal = (Number(tax) + Number(total)).toFixed(2);
-     
-     
-    
 
     if (arrayInputs.includes("")) {
       return window.alert(`Input is not valid`);
