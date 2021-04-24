@@ -1,0 +1,11 @@
+.Products{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 500px 500px 500px; 
+    width: 50%;
+    gap: 20px 5px;
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 40px;
+ }

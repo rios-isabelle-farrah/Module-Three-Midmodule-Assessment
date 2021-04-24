@@ -1,0 +1,13 @@
+.rightCart {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.Cart {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
